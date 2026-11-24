@@ -4,15 +4,15 @@ import React, { useEffect, useState } from 'react';
 const WHATSAPP_NUMBER = '918792100629';
 
 const services = [
-  { id: 's1', img: 'transformation-7.jpeg', number: '01', title: '100 Days Challenge', duration: '100 days', text: '100 focused days. Real discipline.' },
-  { id: 's2', img: 'transformation-6.jpeg', number: '02', title: '60 Days Transformation', duration: '60 days', text: 'A visible body change in 60 days.' },
-  { id: 's3', img: 'transformation-5.jpeg', number: '03', title: '90 Days Challenge', duration: '90 days', text: '90 days of focused training and diet.' },
-  { id: 's4', img: 'transformation-4.jpeg', number: '04', title: '60 Days Transformation', duration: '60 days', text: 'Train, eat right, see results.' },
-  { id: 's5', img: 'transformation-3.jpeg', number: '05', title: 'Over Fat Loss in 60 Days', duration: '60 days', text: 'Lose stubborn fat in 60 days.' },
-  { id: 's6', img: 'transformation-2.jpeg', number: '06', title: '90 Days Transformation', duration: '90 days', text: 'Strength, fat loss and confidence.' },
-  { id: 's7', img: 'transformation-1.jpeg', number: '07', title: '30 Days Transformation', duration: '30 days', text: 'Kickstart your change in 30 days.' },
-  { id: 's8', img: 'transformation-8.jpeg', number: '08', title: 'Muscle Gain in 6 Months', duration: '6 months', text: 'Build lean muscle in 6 months.' },
-  { id: 's9', img: 'transformation-9.jpeg', number: '09', title: 'Over Fat Loss & Muscle Gain in 6 Months', duration: '6 months', text: 'Lose fat and build muscle together.' },
+  { id: 's1', img: 'transformation-7.jpeg', title: '100 Days Challenge', duration: '100 days', text: '100 focused days. Real discipline.' },
+  { id: 's2', img: 'transformation-6.jpeg', title: '60 Days Transformation', duration: '60 days', text: 'A visible body change in 60 days.' },
+  { id: 's3', img: 'transformation-5.jpeg', title: '90 Days Challenge', duration: '90 days', text: '90 days of focused training and diet.' },
+  { id: 's4', img: 'transformation-4.jpeg', title: '60 Days Transformation', duration: '60 days', text: 'Train, eat right, see results.' },
+  { id: 's5', img: 'transformation-3.jpeg', title: 'Over Fat Loss in 60 Days', duration: '60 days', text: 'Lose stubborn fat in 60 days.' },
+  { id: 's6', img: 'transformation-2.jpeg', title: '90 Days Transformation', duration: '90 days', text: 'Strength, fat loss and confidence.' },
+  { id: 's7', img: 'transformation-1.jpeg', title: '30 Days Transformation', duration: '30 days', text: 'Kickstart your change in 30 days.' },
+  { id: 's8', img: 'transformation-8.jpeg', title: 'Muscle Gain in 6 Months', duration: '6 months', text: 'Build lean muscle in 6 months.' },
+  { id: 's9', img: 'transformation-9.jpeg', title: 'Over Fat Loss & Muscle Gain in 6 Months', duration: '6 months', text: 'Lose fat and build muscle together.' },
 ];
 
 function Brand() {
@@ -71,7 +71,7 @@ export default function App() {
         <section className="services section-wrap" id="services">
           <div className="service-grid">{services.map((s) => (
             <button type="button" className="service-card" key={s.id} onClick={() => { setSelectedService(s); setSubmitted(false); setWhatsappUrl(''); }} aria-label={`Select ${s.title}`}>
-              <span className="service-photo"><img src={`${import.meta.env.BASE_URL}${s.img}`} alt={s.title} loading="lazy" /><span className="service-number">{s.number}</span></span>
+              <span className="service-photo"><img src={`${import.meta.env.BASE_URL}${s.img}`} alt={s.title} loading="lazy" /></span>
               <strong>{s.title}</strong>
               <span className="service-text">{s.text}</span>
               <span className="service-meta"><span className="chip">{s.duration}</span><span className="service-select">Select &amp; enquire <i>→</i></span></span>

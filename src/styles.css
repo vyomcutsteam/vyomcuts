@@ -38,14 +38,13 @@ em{font-style:normal;background:var(--grad);-webkit-background-clip:text;backgro
 .section-heading h2{font-size:clamp(38px,5vw,58px)}
 .section-aside{max-width:340px;margin:0;font-size:14px;line-height:1.7;color:var(--muted)}
 .service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
-.service-photo{position:relative;display:block;width:calc(100% + 52px);margin:-26px -26px 6px;aspect-ratio:16/11;overflow:hidden}.service-photo img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}.service-photo .service-number{position:absolute;right:14px;top:8px;color:#fff;text-shadow:0 2px 10px #0008}
+.service-photo{position:relative;display:block;width:calc(100% + 52px);margin:-26px -26px 6px;aspect-ratio:16/11;overflow:hidden}.service-photo img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
 .service-card{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:12px;width:100%;padding:26px;text-align:left;color:var(--text);cursor:pointer;border-radius:6px 28px 6px 28px;background:linear-gradient(160deg,var(--card-2),var(--card));border:1px solid var(--line);overflow:hidden;transition:transform .3s,border-color .3s,box-shadow .3s}
 .service-card:before{content:'';position:absolute;left:0;top:0;width:100%;height:3px;background:var(--grad);transform:scaleX(.2);transform-origin:left;transition:transform .4s}
 .service-card:hover{transform:translateY(-6px);border-color:#8b5cf6;box-shadow:0 20px 44px -20px #8b5cf6aa}
 .service-card:hover:before{transform:scaleX(1)}
 .service-card:focus-visible,.enquiry-close:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
 .service-top{display:flex;justify-content:space-between;align-items:center;width:100%;margin-bottom:10px}
-.service-number{font-size:34px;font-weight:700;color:#ffffff;letter-spacing:-1px}
 .service-card>strong{font-size:20px;letter-spacing:-.4px}
 .service-text{font-size:14px;line-height:1.65;color:var(--muted);flex:1}
 .service-meta{display:flex;align-items:center;justify-content:space-between;width:100%;margin-top:10px}
