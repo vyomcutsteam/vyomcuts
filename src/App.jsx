@@ -13,6 +13,8 @@ const services = [
   { id: 's7', img: 'transformation-1.jpeg', title: '30 Days Transformation', duration: '30 days', text: 'Kickstart your change in 30 days.' },
   { id: 's8', img: 'transformation-8.jpeg', title: 'Muscle Gain in 6 Months', duration: '6 months', text: 'Build lean muscle in 6 months.' },
   { id: 's9', img: 'transformation-9.jpeg', title: 'Over Fat Loss & Muscle Gain in 6 Months', duration: '6 months', text: 'Lose fat and build muscle together.' },
+  { id: 's10', img: 'WhatsApp Image 2026-11-25 at 11.28.46 AM (1).jpeg', title: '90 Days Transformation', duration: '90 days', text: 'A focused 90-day transformation.' },
+  { id: 's11', img: 'WhatsApp Image 2026-11-25 at 11.28.46 AM.jpeg', title: '90 Days Transformation', duration: '90 days', text: 'A focused 90-day transformation.' },
 ];
 
 function Brand() {
@@ -111,7 +113,7 @@ export default function App() {
                       <label>Weight <span>*</span><input name="weight" type="text" placeholder="e.g. 70 kg" maxLength="20" required /></label>
                       <label>Phone number <span>*</span><input name="phone_number" type="tel" placeholder="+91 98765 43210" autoComplete="tel" pattern="\+?[0-9\s()\-]{7,18}" required /></label>
                       <label>Email address <span>*</span><input name="email" type="email" placeholder="you@example.com" autoComplete="email" maxLength="254" required /></label>
-                      <label>Food preference <span>*</span><select name="food" defaultValue="" required><option value="" disabled>Select</option><option>Veg</option><option>Non-veg</option></select></label>
+                      <label>Food preference <span>*</span><select name="food" defaultValue="" required><option value="" disabled>Select</option><option>Veg</option><option>Non-veg</option><option>Both (Veg &amp; Non-veg)</option></select></label>
                       <label>Training experience <span>*</span><select name="experience" defaultValue="" required><option value="" disabled>Select</option><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select></label>
                     </div>
                     <p className="photo-note">After submitting, please send your current <b>Front, Side and Back</b> physique photos on WhatsApp.</p>
